@@ -9,7 +9,11 @@
 
     <link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="static/css/dc.min.css" type="text/css" />
-
+    <style>
+        div {
+            clear: left;
+        }
+    </style>
     <script type="text/javascript" src="static/js/d3.min.js"></script>
     <script type="text/javascript" src="static/js/crossfilter.min.js"></script>
     <script type="text/javascript" src="static/js/dc.min.js"></script>
@@ -19,25 +23,39 @@
 </head>
 
 <body>
+    <div>
+        <h1>Money Win</h1>
 
-    <h1>Money Win</h1>
+        <div id="game-type"></div>
 
-    <div id="game-type"></div>
+        <div id="players"></div>
+    </div>
+    <div>
+        <h1>Total Buy-In</h1>
 
-    <div id="players"></div>
+        <div id="total-buy-in"></div>
+    </div>
+    <div>
+        <h1>Location Of Games</h1>
 
-    <h1>Total Buy-In</h1>
+        <div id="location"></div>
+    </div>
 
-    <div id="total-buy-in"></div>
+    <div>
+        <h1>Profit</h1>
 
-    <h1>Profit</h1>
+        <div id="profit"></div>
+    </div>
+    <div>
+        <h1>Average Position</h1>
 
-    <div id="profit"></div>
+        <div id="avr_position"></div>
+    </div>
+    <div>
+        <h1>Monthly Wins</h1>
 
-    <h1>Average Place</h1>
-
-    <div id="av_place"></div>
-
+        <div id="months"></div>
+    </div>
 
 </body>
 

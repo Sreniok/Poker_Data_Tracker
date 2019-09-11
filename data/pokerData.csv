@@ -1,43 +1,43 @@
-"","name","type","place","spend","position","win"
-"1","Filip","Online","PokerStars",25,13,50
-"2","Lukasz","Online","PokerStars",10,1,300
-"3","Tereska","Online","PokerStars",15,45,0
-"4","Lukasz","Live","Galway Casio",50,10,65
-"5","Filip","Online","PokerStars",5,5,50
-"6","Tereska","Live","Dublin Casio",150,3,4000
-"7","Lukasz","Online","PokerStars",20,45,0
-"8","Filip","Live","Galway Casio",35,16,0
-"9","Tereska","Live","Galway Casio",50,9,75
-"10","Lukasz","Online","PokerStars",3,1,55
-"11","Filip","Online","PokerStars",6,5,20
-"12","Tereska","Live","Dublin Casio",100,5,500
-"13","Lukasz","Online","PokerStars",35,11,85
-"14","Filip","Live","Galway Casio",125,9,180
-"15","Tereska","Online","PokerStars",12,30,0
-"16","Lukasz","Live","Cork Casino",160,25,0
-"17","Filip","Live","Cork Casino",85,13,85
-"18","Tereska","Live","Galway Casio",60,4,250
-"19","Lukasz","Online","PokerStars",20,14,26
-"20","Filip","Online","PokerStars",20,24,0
-"21","Tereska","Online","PokerStars",20,11,40
-"22","Lukasz","Online","PokerStars",15,40,15
-"23","Filip","Live","Dublin Casio",125,6,300
-"24","Filip","Online","PokerStars",25,45,25
-"25","Lukasz","Online","PokerStars",6,1,50
-"26","Filip","Online","PokerStars",40,10,120
-"27","Tereska","Live","Galway Casio",35,1,450
-"28","Lukasz","Online","PokerStars",35,15,50
-"29","Filip","Online","PokerStars",11,3,250
-"30","Tereska","Live","Dublin Casio",150,34,0
-"31","Lukasz","Live","Galway Casio",140,8,450
-"32","Filip","Live","Dublin Casio",60,20,0
-"33","Tereska","Online","PokerStars",8,25,0
-"34","Lukasz","Online","PokerStars",5,2,55
-"35","Filip","Live","Cork Casino",90,6,190
-"36","Tereska","Online","PokerStars",6,10,12
-"37","Lukasz","Online","PokerStars",7,9,14
-"38","Filip","Live","Cork Casino",90,13,0
-"39","Tereska","Online","PokerStars",6,30,0
-"40","Lukasz","Online","PokerStars",5,13,11
-"41","Filip","Live","Cork Casino",90,7,180
-"42","Tereska","Online","PokerStars",6,1,250
+"","date","name","type","location","spend","position","win"
+"01","01/01/2019","Filip","Online","PokerStars",25,13,50
+"02","04/01/2019","Lukasz","Online","PokerStars",10,1,300
+"03","06/01/2019","Tereska","Online","PokerStars",15,45,0
+"04","08/01/2019","Lukasz","Live","Galway Casio",50,10,65
+"05","03/02/2019","Filip","Online","PokerStars",5,5,50
+"06","05/02/2019","Tereska","Live","Dublin Casio",150,3,800
+"07","16/02/2019","Lukasz","Online","PokerStars",20,45,0
+"08","17/02/2019","Filip","Live","Galway Casio",35,16,0
+"09","11/03/2019","Tereska","Live","Galway Casio",50,9,75
+"10","25/03/2019","Lukasz","Online","PokerStars",3,1,55
+"11","30/03/2019","Filip","Online","PokerStars",6,5,20
+"12","01/04/2019","Tereska","Live","Dublin Casio",800,5,0
+"13","03/04/2019","Lukasz","Online","PokerStars",35,11,85
+"14","10/04/2019","Filip","Live","Galway Casio",125,9,180
+"15","04/05/2019","Tereska","Online","PokerStars",12,30,0
+"16","08/05/2019","Lukasz","Live","Cork Casino",160,25,0
+"17","11/05/2019","Filip","Live","Cork Casino",85,13,85
+"18","12/05/2019","Tereska","Live","Galway Casio",60,4,250
+"19","16/05/2019","Lukasz","Online","PokerStars",20,14,26
+"20","25/05/2019","Filip","Online","PokerStars",20,24,0
+"21","01/06/2019","Tereska","Online","PokerStars",20,11,40
+"22","09/06/2019","Lukasz","Online","PokerStars",15,40,15
+"23","13/06/2019","Filip","Live","Dublin Casio",125,6,300
+"24","02/07/2019","Filip","Online","PokerStars",25,45,25
+"25","04/07/2019","Lukasz","Online","PokerStars",6,1,50
+"26","06/07/2019","Filip","Online","PokerStars",40,10,120
+"27","09/08/2019","Tereska","Live","Galway Casio",35,1,450
+"28","14/08/2019","Lukasz","Online","PokerStars",35,15,50
+"29","18/08/2019","Filip","Online","PokerStars",11,3,250
+"30","03/09/2019","Tereska","Live","Dublin Casio",150,34,0
+"31","05/09/2019","Lukasz","Live","Galway Casio",140,8,450
+"32","17/09/2019","Filip","Live","Dublin Casio",60,20,0
+"33","12/10/2019","Tereska","Online","PokerStars",8,25,0
+"34","15/10/2019","Lukasz","Online","PokerStars",5,2,55
+"35","26/10/2019","Filip","Live","Cork Casino",90,6,190
+"36","01/11/2019","Tereska","Online","PokerStars",6,10,12
+"37","11/11/2019","Lukasz","Online","PokerStars",7,9,14
+"38","19/11/2019","Filip","Live","Cork Casino",90,13,0
+"39","23/11/2019","Tereska","Online","PokerStars",6,30,0
+"40","03/12/2019","Lukasz","Online","PokerStars",5,13,11
+"41","11/12/2019","Filip","Live","Cork Casino",90,7,180
+"42","13/12/2019","Tereska","Online","PokerStars",6,1,212
