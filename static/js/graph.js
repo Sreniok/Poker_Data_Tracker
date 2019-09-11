@@ -40,7 +40,7 @@ function show_players(ndx) {
     var player_dim = ndx.dimension(dc.pluck('name'));
     var total_win = player_dim.group().reduceSum(dc.pluck('win'));
 
-    dc.barChart("#players")
+    dc.barChart("#totla_wins")
         .width(400)
         .height(300)
         .margins({
@@ -54,11 +54,11 @@ function show_players(ndx) {
         .transitionDuration(500)
         .x(d3.scale.ordinal())
         .xUnits(dc.units.ordinal)
-        .yAxisLabel("Money Win")
+        .yAxisLabel("$$$")
         .yAxis().ticks(20);
-}
+};
 
-function show_total_buy_in(ndx) {
+function show_total_buy_in(ndx, element) {
     var name_dim = ndx.dimension(dc.pluck('name'));
     var total_buy_in_per_player = name_dim.group().reduceSum(dc.pluck("spend"));
 
@@ -68,7 +68,7 @@ function show_total_buy_in(ndx) {
         .transitionDuration(1500)
         .dimension(name_dim)
         .group(total_buy_in_per_player);
-}
+};
 
 function show_profit(ndx) {
     var player_dim = ndx.dimension(dc.pluck('name'));
@@ -119,7 +119,7 @@ function show_profit(ndx) {
         .transitionDuration(500)
         .x(d3.scale.ordinal())
         .xUnits(dc.units.ordinal)
-        .yAxisLabel("Money Win")
+        .yAxisLabel("$$$")
         .yAxis().ticks(20);
 }
 
@@ -218,7 +218,7 @@ function show_wins_by_month_per_person(ndx) {
         .height(200)
         .dimension(date_dim)
         .x(d3.time.scale().domain([minDate, maxDate]))
-        .yAxisLabel("Wins")
+        .yAxisLabel("$$$")
         .legend(dc.legend().x(80).y(20).itemHeight(13).gap(5))
         .renderHorizontalGridLines(true)
         .compose([
