@@ -10,6 +10,7 @@ function makeGraphs(error, pokerData) {
         d.position = parseInt(d.position);
         d.wins = parseInt(d.win);
         d.date = parseDate(d.date);
+        d.spend = parseInt(d.spend);
     });
 
 
