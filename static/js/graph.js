@@ -80,12 +80,12 @@ function show_profit(ndx) {
     }
 
     function remove_item(p, v) {
-        p.total_wins += v.wins;
+        p.total_wins -= v.wins;
         if (p.total_wins == 0) {
             p.total_spend = 0;
             p.profit = 0;
         } else {
-            p.total_spend += v.spend;
+            p.total_spend -= v.spend;
             p.profit = p.total_wins - p.total_spend;
         }
         return p;
