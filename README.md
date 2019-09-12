@@ -36,7 +36,6 @@ The select menu allows a user to choose between games type and player, chart is 
 
 ## Technologies Used
 
-- ITechnology used in this project :
 - Bootstrap 3
 - dc graphs 
 - d3
