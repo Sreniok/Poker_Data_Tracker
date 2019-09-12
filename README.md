@@ -1,6 +1,6 @@
 # Poker Data Tracker
 
-This website is for people who play poker and wants to track expenses and winning rake. 
+This website is for people who play poker and wants to track expenses and winning. 
 ## UX
 
 A website is created for people, who play poker online or live and wants to track their results  
