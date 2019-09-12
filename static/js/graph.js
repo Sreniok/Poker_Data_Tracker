@@ -15,6 +15,7 @@ function makeGraphs(error, pokerData) {
 
 
     show_gameType_selector(ndx);
+    show_player_selector(ndx);
     show_players(ndx);
     show_total_buy_in(ndx);
     show_profit(ndx);
@@ -26,6 +27,14 @@ function makeGraphs(error, pokerData) {
     dc.renderAll()
 }
 
+function show_player_selector(ndx) {
+    dim = ndx.dimension(dc.pluck('name'));
+    group = dim.group()
+
+    dc.selectMenu("#player_selection")
+        .dimension(dim)
+        .group(group);
+}
 
 function show_gameType_selector(ndx) {
     dim = ndx.dimension(dc.pluck('type'));
@@ -36,13 +45,38 @@ function show_gameType_selector(ndx) {
         .group(group);
 }
 
+function show_location_of_play(ndx) {
+    var location_dim = ndx.dimension(dc.pluck('location'));
+    var games_dim = location_dim.group()
+
+    dc.pieChart('#location')
+        .height(250)
+        .radius(130)
+        .transitionDuration(1500)
+        .dimension(location_dim)
+        .group(games_dim);
+}
+
+function show_total_buy_in(ndx, element) {
+    var name_dim = ndx.dimension(dc.pluck('name'));
+    var total_buy_in_per_player = name_dim.group().reduceSum(dc.pluck("spend"));
+
+    dc.pieChart("#total-buy-in")
+        .height(250)
+        .radius(130)
+        .transitionDuration(1500)
+        .dimension(name_dim)
+        .group(total_buy_in_per_player);
+};
+
+
 function show_players(ndx) {
     var player_dim = ndx.dimension(dc.pluck('name'));
     var total_win = player_dim.group().reduceSum(dc.pluck('win'));
 
     dc.barChart("#totla_wins")
-        .width(400)
-        .height(300)
+        .width(350)
+        .height(250)
         .margins({
             top: 10,
             right: 50,
@@ -58,17 +92,6 @@ function show_players(ndx) {
         .yAxis().ticks(20);
 };
 
-function show_total_buy_in(ndx, element) {
-    var name_dim = ndx.dimension(dc.pluck('name'));
-    var total_buy_in_per_player = name_dim.group().reduceSum(dc.pluck("spend"));
-
-    dc.pieChart("#total-buy-in")
-        .height(330)
-        .radius(90)
-        .transitionDuration(1500)
-        .dimension(name_dim)
-        .group(total_buy_in_per_player);
-};
 
 function show_profit(ndx) {
     var player_dim = ndx.dimension(dc.pluck('name'));
@@ -103,8 +126,8 @@ function show_profit(ndx) {
     var profit_dim = player_dim.group().reduce(add_item, remove_item, initialise);
 
     dc.barChart("#profit")
-        .width(400)
-        .height(300)
+        .width(350)
+        .height(250)
         .margins({
             top: 10,
             right: 50,
@@ -157,8 +180,8 @@ function show_average_position(ndx) {
     var averagePositionByPlayer = avr_dim.group().reduce(add_item, remove_item, initialise);
 
     dc.barChart("#avr_position")
-        .width(400)
-        .height(300)
+        .width(350)
+        .height(250)
         .margins({
             top: 10,
             right: 50,
@@ -234,16 +257,4 @@ function show_wins_by_month_per_person(ndx) {
 
         ])
         .brushOn(false);
-}
-
-function show_location_of_play(ndx) {
-    var location_dim = ndx.dimension(dc.pluck('location'));
-    var games_dim = location_dim.group().reduceSum(dc.pluck('win'))
-
-    dc.pieChart('#location')
-        .height(330)
-        .radius(90)
-        .transitionDuration(1500)
-        .dimension(location_dim)
-        .group(games_dim);
 }

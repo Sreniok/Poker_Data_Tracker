@@ -1,0 +1,24 @@
+.navbar-inverse {
+    background-color: rgb(248, 248, 248);
+    border-color: rgb(248, 248, 248);
+
+}
+
+.navbar-inverse .navbar-brand {
+    color: rgb(153, 153, 153);
+    font-weight: 600;
+}
+
+.section-heading,
+#game-type,
+#player_selection {
+    display: block;
+    float: none;
+    margin: 20px;
+
+}
+
+.section-paragraph {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
