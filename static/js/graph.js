@@ -27,6 +27,16 @@ function makeGraphs(error, pokerData) {
     dc.renderAll()
 }
 
+function show_gameType_selector(ndx) {
+    dim = ndx.dimension(dc.pluck('type'));
+    group = dim.group()
+
+    dc.selectMenu("#game-type")
+        .dimension(dim)
+        .group(group);
+}
+
+
 function show_player_selector(ndx) {
     dim = ndx.dimension(dc.pluck('name'));
     group = dim.group()
@@ -36,14 +46,6 @@ function show_player_selector(ndx) {
         .group(group);
 }
 
-function show_gameType_selector(ndx) {
-    dim = ndx.dimension(dc.pluck('type'));
-    group = dim.group()
-
-    dc.selectMenu("#game-type")
-        .dimension(dim)
-        .group(group);
-}
 
 function show_location_of_play(ndx) {
     var location_dim = ndx.dimension(dc.pluck('location'));
@@ -146,6 +148,7 @@ function show_profit(ndx) {
         .yAxis().ticks(20);
 }
 
+
 function show_average_position(ndx) {
     var avr_dim = ndx.dimension(dc.pluck('name'));
 
@@ -167,8 +170,6 @@ function show_average_position(ndx) {
         }
         return p;
     }
-
-
 
     function initialise() {
         return {
@@ -203,6 +204,7 @@ function show_average_position(ndx) {
         .yAxisLabel("Position")
         .yAxis().ticks()
 }
+
 
 function show_wins_by_month_per_person(ndx) {
     var date_dim = ndx.dimension(dc.pluck('date'));
