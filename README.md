@@ -1,4 +1,4 @@
-# YPoker Data Tracker
+# Poker Data Tracker
 
 This website is for people who play poker and wants to track expenses and winning rake. 
 ## UX
