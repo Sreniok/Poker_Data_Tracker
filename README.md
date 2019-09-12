@@ -11,7 +11,13 @@ where you earn the most money
 see your monthly win
 whats it's your average position 
 
- 
+ ## Deployment
+
+This site is hosted using GitHube pages, deployed directly from master branch.
+
+GitHube Repositories: https://github.com/Sreniok/Poker_Data_Tracker
+
+GitHube pages:  https://sreniok.github.io/Poker_Data_Tracker/
 
 ## Features
 
