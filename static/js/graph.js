@@ -59,8 +59,8 @@ function show_location_of_play(ndx) {
         .group(games_dim);
 }
 
-function show_total_buy_in(ndx, element) {
-    var name_dim = ndx.dimension(dc.pluck('name'));
+function show_total_buy_in(ndx) {
+    var name_dim = ndx.dimension(dc.pluck('location'));
     var total_buy_in_per_player = name_dim.group().reduceSum(dc.pluck("spend"));
 
     dc.pieChart("#total-buy-in")

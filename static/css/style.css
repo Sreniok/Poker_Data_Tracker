@@ -1,11 +1,11 @@
 .navbar-inverse {
-    background-color: rgb(248, 248, 248);
-    border-color: rgb(248, 248, 248);
+    background-color: #6caed6;
+    border-color: #6caed6;
 
 }
 
 .navbar-inverse .navbar-brand {
-    color: rgb(153, 153, 153);
+    color: #92c1e2;
     font-weight: 600;
 }
 
@@ -21,4 +21,18 @@
 .section-paragraph {
     margin-bottom: 30px;
     font-size: 18px;
+}
+
+.navbar-inverse {
+    margin-bottom: 0;
+}
+
+.footer {
+    text-align: center;
+    background-color: #9dcae0;
+    color: #e5f0fb;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    padding: 15px;
 }
