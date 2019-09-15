@@ -4,7 +4,7 @@ queue()
 
 function makeGraphs(error, pokerData) {
     var ndx = crossfilter(pokerData);
-    var parseDate = d3.time.format("%d/%m/%Y").parse
+    var parseDate = d3.time.format("%d/%m/%Y").parse;
 
     pokerData.forEach(function (d) {
         d.position = parseInt(d.position);
@@ -24,14 +24,14 @@ function makeGraphs(error, pokerData) {
     show_location_of_play(ndx);
 
 
-    dc.renderAll()
+    dc.renderAll();
 }
 
 function show_gameType_selector(ndx) {
     dim = ndx.dimension(dc.pluck('type'));
-    group = dim.group()
+    group = dim.group();
 
-    dc.selectMenu("#game-type")
+    dc.selectMenu('#game-type')
         .dimension(dim)
         .group(group);
 }
@@ -39,9 +39,9 @@ function show_gameType_selector(ndx) {
 
 function show_player_selector(ndx) {
     dim = ndx.dimension(dc.pluck('name'));
-    group = dim.group()
+    group = dim.group();
 
-    dc.selectMenu("#player_selection")
+    dc.selectMenu('#player_selection')
         .dimension(dim)
         .group(group);
 }
@@ -49,7 +49,7 @@ function show_player_selector(ndx) {
 
 function show_location_of_play(ndx) {
     var location_dim = ndx.dimension(dc.pluck('location'));
-    var games_dim = location_dim.group()
+    var games_dim = location_dim.group();
 
     dc.pieChart('#location')
         .height(250)
@@ -61,22 +61,22 @@ function show_location_of_play(ndx) {
 
 function show_total_buy_in(ndx) {
     var name_dim = ndx.dimension(dc.pluck('location'));
-    var total_buy_in_per_player = name_dim.group().reduceSum(dc.pluck("spend"));
+    var total_buy_in_per_player = name_dim.group().reduceSum(dc.pluck('spend'));
 
-    dc.pieChart("#total-buy-in")
+    dc.pieChart('#total-buy-in')
         .height(250)
         .radius(130)
         .transitionDuration(1500)
         .dimension(name_dim)
         .group(total_buy_in_per_player);
-};
+}
 
 
 function show_players(ndx) {
     var player_dim = ndx.dimension(dc.pluck('name'));
     var total_win = player_dim.group().reduceSum(dc.pluck('win'));
 
-    dc.barChart("#totla_wins")
+    dc.barChart('#totla_wins')
         .width(350)
         .height(250)
         .margins({
@@ -90,9 +90,9 @@ function show_players(ndx) {
         .transitionDuration(500)
         .x(d3.scale.ordinal())
         .xUnits(dc.units.ordinal)
-        .yAxisLabel("$$$")
+        .yAxisLabel('$$$')
         .yAxis().ticks(20);
-};
+}
 
 
 function show_profit(ndx) {
@@ -127,7 +127,7 @@ function show_profit(ndx) {
 
     var profit_dim = player_dim.group().reduce(add_item, remove_item, initialise);
 
-    dc.barChart("#profit")
+    dc.barChart('#profit')
         .width(350)
         .height(250)
         .margins({
@@ -144,7 +144,7 @@ function show_profit(ndx) {
         .transitionDuration(500)
         .x(d3.scale.ordinal())
         .xUnits(dc.units.ordinal)
-        .yAxisLabel("$$$")
+        .yAxisLabel('$$$')
         .yAxis().ticks(20);
 }
 
@@ -180,7 +180,7 @@ function show_average_position(ndx) {
     }
     var averagePositionByPlayer = avr_dim.group().reduce(add_item, remove_item, initialise);
 
-    dc.barChart("#avr_position")
+    dc.barChart('#avr_position')
         .width(350)
         .height(250)
         .margins({
@@ -201,8 +201,8 @@ function show_average_position(ndx) {
             .range([0, 300]))
         .xUnits(dc.units.ordinal)
         .elasticY(true)
-        .yAxisLabel("Position")
-        .yAxis().ticks()
+        .yAxisLabel('Position')
+        .yAxis().ticks();
 }
 
 
@@ -236,14 +236,14 @@ function show_wins_by_month_per_person(ndx) {
         }
     });
 
-    var compositeChart = dc.compositeChart("#months");
+    var compositeChart = dc.compositeChart('#months');
 
     compositeChart
         .width(990)
         .height(200)
         .dimension(date_dim)
         .x(d3.time.scale().domain([minDate, maxDate]))
-        .yAxisLabel("$$$")
+        .yAxisLabel('$$$')
         .legend(dc.legend().x(80).y(20).itemHeight(13).gap(5))
         .renderHorizontalGridLines(true)
         .compose([
