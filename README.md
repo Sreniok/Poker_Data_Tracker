@@ -45,7 +45,7 @@ The select menu allows a user to choose between games type and player, chart is 
 
 ## Testing
 
-The website was tested on https://jshint.com to check JavaScript errors. Tested for interaction, selecting a game type and player works, graph shows correct value when hover mouse over them. The website was tested for the mobile version also.
+The website was tested on https://jshint.com to check JavaScript errors. Tested for interaction, selecting a game type and player works, graph shows correct value when hover mouse over them. The website was tested for the mobile version.
 
 
 ### Acknowledgements
