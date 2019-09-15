@@ -40,11 +40,6 @@
 }
 
 @media (max-width:629px) {
-    h1 {
-        font-size: 20px;
-    }
-
-    ,
 
     #months,
     .compositeChart {
@@ -57,5 +52,11 @@
     #location,
     #total-buy-in {
         padding-left: 120px;
+    }
+}
+
+@media (max-width:629px) {
+    h1 {
+        font-size: 20px;
     }
 }
