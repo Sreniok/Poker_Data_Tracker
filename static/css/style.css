@@ -40,9 +40,20 @@
 }
 
 @media (max-width:629px) {
+    h1 {
+        font-size: 20px;
+    }
 
     #months,
     .compositeChart {
         display: none;
+    }
+}
+
+@media (min-width:790px) {
+
+    #location,
+    #total-buy-in {
+        padding-left: 120px;
     }
 }
